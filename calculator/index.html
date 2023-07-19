@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ 
+<head>
+  <meta charset="utf-8">
+  <title>Muhammed's Calc</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+ 
+<table class="calculator" >
+  <tr>
+    <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+ 
+    
+  </tr>
+  <div>
+  <tr class="table-row">
+
+    <td> <input type="button" class="button btn-grey" value="1" onclick="display('1')" /> </td>
+    <td> <input type="button" class="button btn-grey" value="2" onclick="display('2')" /> </td>
+    <td> <input type="button" class="button btn-grey" value="3" onclick="display('3')" /> </td>
+    <td> <input type="button" class="button btn-yellow" id="btn btn-yellow" value="÷" onclick="display('/')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" class="button btn-grey" value="4" onclick="display('4')" /> </td>
+    <td> <input type="button" class="button btn-grey" value="5" onclick="display('5')" /> </td>
+    <td> <input type="button" class="button btn-grey" value="6" onclick="display('6')" /> </td>
+    <td> <input type="button" class="button btn-yellow" id="btn btn-yellow" value="-" onclick="display('-')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" class="button btn-grey" value="7" onclick="display('7')" /> </td>
+    <td> <input type="button" class="button btn-grey" value="8" onclick="display('8')" /> </td>
+    <td> <input type="button" class="button btn-grey" value="9" onclick="display('9')" /> </td>
+    <td> <input type="button" class="button btn-yellow" value="+" onclick="display('+')" /> </td>
+  </tr>
+  <tr>
+    <td> <input type="button" class="button btn-grey" value="." onclick="display('.')" /> </td>
+    <td> <input type="button" class="button btn-grey" value="0" onclick="display('0')" /> </td>
+ 
+    
+    <td> <input type="button" class="button" value="=" onclick="calculate()" id="btn-equal" /> </td>
+    <td> <input type="button" class="button btn-yellow" value="*" onclick="display('*')" /> </td>
+  </tr>
+  </div>
+  <tr>
+    <td> <input type="button" class="button" value="C" onclick="clearScreen()" id="btn-cancel" /> </td>
+  </tr>
+</table>
+ 
+<script type="text/javascript" src="script.js"></script>
+ 
+</body>
+ 
+</html>
